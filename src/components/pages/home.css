@@ -1,0 +1,54 @@
+:root {
+  --bg-color: #222327;
+  --text-color: #48ff00;
+  --main-color: #ffffff;
+}
+.text {
+  font-family: "Arial", sans-serif;
+}
+
+.text {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tittle .text {
+  position: relative;
+  max-width: 600px;
+  margin-right: 20px;
+  left: -500;
+}
+
+.tittle .text h2 {
+  color: #fff;
+  font-size: 3em;
+  margin-bottom: 10px;
+  line-height: 2.5em;
+  font-weight: 700;
+}
+
+.tittle .text h2 span {
+  font-size: 3.5em;
+  color: var(--text-color);
+}
+
+.tittle .text p {
+  color: #fff;
+}
+.tittle .text a {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 10px 25px;
+  background: #3ec20a;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  transition: 0.3s ease-in-out;
+}
+.tittle .text a:hover {
+  transform: translateY(-10px);
+}
