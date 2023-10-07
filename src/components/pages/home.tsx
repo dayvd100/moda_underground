@@ -8,18 +8,32 @@ import "./home.css";
 function Home() {
   return (
     <div>
-      <div className="tittle">
-        <div className="text">
-          <h2>
-            POSSUA O <br />
-            <span>DRIP</span>
-          </h2>
-          <p>
-            No trap, a moda é a melodia da autoexpressão, onde nosso estilo cria
-            o ritmo da rua.
-          </p>
-          <a href="#">veja as maiores referências do mundo da moda</a>
-        </div>
+      <div className="container">
+        <section className="normals">
+          <h1 className="texts">$TyL</h1>
+        </section>
+        <section className="parallax">
+          <div className="background bg-1"></div>
+          <h1>Drip Too Hard</h1>
+        </section>
+
+        <section className="normal">
+          <h1>Drip é o estilo que fala sem palavras.</h1>
+        </section>
+
+        <section className="parallax">
+          <div className="background bg-2"></div>
+          <h1>I feel like I'm Gucci Mane in 2006</h1>
+        </section>
+
+        <section className="normal">
+          <h1>Sua roupa é a tela, seu estilo é a pintura.</h1>
+        </section>
+
+        <section className="parallax">
+          <div className="background bg-3"></div>
+          <h1>black lives matter</h1>
+        </section>
       </div>
     </div>
   );

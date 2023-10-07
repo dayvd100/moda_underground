@@ -15,7 +15,7 @@ function Header() {
       <div className="header-links">
         <a href="home.tsx" className="logo">
           <img src="" title="logo" />
-          <span>$TyL</span>
+          {/* <span>$TyL</span> */}
         </a>
         <nav className={`nav-mid-links ${menuOpen ? "open" : ""}`}>
           <NavLink to="/">Home</NavLink>
