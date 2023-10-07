@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,700&display=swap");
+
 :root {
   --bg-color: #222327;
   --text-color: #48ff00;
@@ -173,6 +175,8 @@ h1 {
   z-index: 2;
 }
 .texts {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
   line-height: 320px;
   cursor: pointer;
   color: transparent;
