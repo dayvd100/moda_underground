@@ -1,14 +1,21 @@
-import {
-  RiInstagramFill,
-  RiPinterestFill,
-  RiTwitterXFill,
-} from "react-icons/ri";
+// import {
+//   RiInstagramFill,
+//   RiPinterestFill,
+//   RiTwitterXFill,
+// } from "react-icons/ri";
 import "./home.css";
 
-function Home() {
+function Home({setScroll}:{setScroll:(e:number)=>void}) {
+
+  const scrollF = (e:any) =>{
+    setScroll(e.target.scrollTop)
+  }
+
+
+
   return (
     <div>
-      <div className="container">
+      <div className="container" onScroll={scrollF}>
         <section className="normals">
           <h1 className="texts">$TyL</h1>
         </section>

@@ -110,3 +110,11 @@ body {
     right: 0;
   }
 }
+
+.scrolled{
+  display: none;
+}
+
+.hide{
+  display: none;
+}
