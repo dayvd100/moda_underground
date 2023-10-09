@@ -7,31 +7,30 @@ import Loja from "./components/pages/loja";
 import Referencia from "./components/pages/referencia";
 import Social from "./components/pages/social";
 import NotFound from "./components/pages/notFound";
-// import Footer from "./components/layouts/footer";
+import Footer from "./components/layouts/footer";
 // import Footer from './components/layouts/footer';
 import {useState} from 'react'
 
 function App() {
 
   const[scrollHeader, setScrollHeader] = useState(0);
+  const[endPage, setEndPage] = useState(false);
 
   return (
     <div className="container">
       <Router>
-        <Header scroll={scrollHeader}/> {/*header fixo */}
+        <Header scroll={scrollHeader}/>
         <div className="links-rotas">
           <Routes>
-            <Route path="/" element={<Home setScroll={setScrollHeader}/>} />
+            <Route path="/" element={<Home setScroll={setScrollHeader} setEndPage={setEndPage}/>} />
             <Route path="/referencias" element={<Referencia />} />
             <Route path="/social" element={<Social />} />{" "}
-            {/*o que vai ser renderizado pela url (path)*/}
             <Route path="/loja" element={<Loja />} />
             <Route path="/contato" element={<Contato />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
-        {/* <Footer /> */}
-        {/* <Footer/> footer fixo */}
+        <Footer endPage={endPage}/>
       </Router>
     </div>
   );

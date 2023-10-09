@@ -4,10 +4,19 @@ import {
   RiTwitterXFill,
 } from "react-icons/ri";
 import "./footer.css";
+import classnames from "classnames";
+// import { useState } from "react";
 
-function Footer() {
+interface FooterProps {
+  endPage: boolean;
+}
+
+function Footer({endPage}: FooterProps) {
+
   return (
-    <footer>
+    <footer className={classnames(
+    {"hide" : endPage === false}
+    )}>
       <div>
         <div className="footer">
           <div className="socialicons">
@@ -24,19 +33,19 @@ function Footer() {
           <div className="footernav">
             <ul>
               <li>
-                <a href="">Home</a>
+                <a href="#">Home</a>
               </li>
               <li>
-                <a href="">Referências</a>
+                <a href="#">Referências</a>
               </li>
               <li>
-                <a href="">Social</a>
+                <a href="#">Social</a>
               </li>
               <li>
-                <a href="">Loja</a>
+                <a href="#">Loja</a>
               </li>
               <li>
-                <a href="">Contato</a>
+                <a href="#">Contato</a>
               </li>
             </ul>
           </div>

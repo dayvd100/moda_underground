@@ -5,17 +5,19 @@
 // } from "react-icons/ri";
 import "./home.css";
 
-function Home({setScroll}:{setScroll:(e:number)=>void}) {
+function Home({setScroll, setEndPage}:{setScroll:(e:number)=>void; setEndPage:(e: boolean) => void}) {
 
   const scrollF = (e:any) =>{
     setScroll(e.target.scrollTop)
   }
 
-
+  const endPageF = (e:any) =>{
+    console.log(e)
+  }
 
   return (
     <div>
-      <div className="container" onScroll={scrollF}>
+      <div className="container" onScroll={(e) => {scrollF(e); endPageF(e)}} >
         <section className="normals">
           <h1 className="texts">$TyL</h1>
         </section>
