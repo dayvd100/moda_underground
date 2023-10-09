@@ -11,9 +11,14 @@ function Home({setScroll, setEndPage}:{setScroll:(e:number)=>void; setEndPage:(e
     setScroll(e.target.scrollTop)
   }
 
-  const endPageF = (e:any) =>{
-    console.log(e)
-  }
+  const endPageF = (e: any) => {
+    if (e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight) {
+      setEndPage(true);
+    }
+    else{
+      setEndPage(false)
+    }
+  };
 
   return (
     <div>
