@@ -3,9 +3,9 @@ import "./contato.css"
 function Contato() {
   return (
     <div>
-      <div className="contato-container">
-        <h1 className="contato-title">Entre em contato conosco</h1>
-        <div className="contatos-acesso-container">
+      <div className="contact-container">
+        <h1 className="contact-title">Entre em contato conosco</h1>
+        <div className="contact-aceccess-container">
         <p>Email do legit lerdao</p>
         <p>numero do legit lerdao</p>
         <p>numero do legit lerdao</p>
