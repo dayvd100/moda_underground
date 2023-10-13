@@ -1,0 +1,28 @@
+.contato-container {
+    display: flex;
+    flex-direction: column; /* Configuração da direção da flexbox para empilhar elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #3EC20A;
+    width: 40%;
+    margin: 150px auto;
+    height: 200px;
+    background-color: #2a8d0f;
+    color: white;
+  }
+
+  .contatos-acesso-container{
+    margin-top: 10px;
+  }
+  
+  .contato-title {
+    font-size: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .contato-container p {
+    display: block; /* Configuração para exibir parágrafos como blocos */
+    margin: 10px 0; /* Adiciona espaçamento entre os parágrafos (10px superior/inferior, 0 à esquerda/direita) */
+  }

@@ -1,7 +1,16 @@
+import "./contato.css"
+
 function Contato() {
   return (
     <div>
-      <h1>Contato</h1>
+      <div className="contato-container">
+        <h1 className="contato-title">Entre em contato conosco</h1>
+        <div className="contatos-acesso-container">
+        <p>Email do legit lerdao</p>
+        <p>numero do legit lerdao</p>
+        <p>numero do legit lerdao</p>
+        </div>
+      </div>
     </div>
   );
 }
