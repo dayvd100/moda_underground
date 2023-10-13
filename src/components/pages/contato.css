@@ -1,4 +1,4 @@
-.contato-container {
+.contact-container {
     display: flex;
     flex-direction: column; /* Configuração da direção da flexbox para empilhar elementos verticalmente */
     justify-content: center;
@@ -11,18 +11,18 @@
     color: white;
   }
 
-  .contatos-acesso-container{
+  .contact-aceccess-container{
     margin-top: 10px;
   }
   
-  .contato-title {
+  .contact-title {
     font-size: 28px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
   
-  .contato-container p {
+  .contact-container p {
     display: block; /* Configuração para exibir parágrafos como blocos */
     margin: 10px 0; /* Adiciona espaçamento entre os parágrafos (10px superior/inferior, 0 à esquerda/direita) */
   }
