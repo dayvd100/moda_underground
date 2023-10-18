@@ -3,25 +3,26 @@ import "./header.css";
 import React, { useState } from "react";
 import { TfiMenuAlt } from "react-icons/tfi";
 import classnames from "classnames";
+import logo from "../../img/logbat.png";
 
-
-function Header({scroll}:{scroll:number}) {
+function Header({ scroll }: { scroll: number }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
   };
 
-
-  console.log(scroll)
+  console.log(scroll);
 
   return (
-    <header className={classnames({
-      "hide" : scroll > 1
-    })}>
+    <header
+      className={classnames({
+        hide: scroll > 1,
+      })}
+    >
       <div className={"header-links"}>
         <a href="home.tsx" className="logo">
-          <img src="" title="logo" alt="logo-header"/>
+          <img src={logo} title="$TyL" alt="logo-header" />
           {/* <span>$TyL</span> */}
         </a>
         <nav className={`nav-mid-links ${menuOpen ? "open" : ""}`}>
