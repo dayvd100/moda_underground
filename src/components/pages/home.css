@@ -175,9 +175,10 @@ h1 {
   z-index: 2;
 }
 .texts {
+  margin-top: -150px;
   font-family: "Poppins", sans-serif;
   font-style: italic;
-  line-height: 320px;
+  line-height: 300px;
   cursor: pointer;
   color: transparent;
   text-transform: uppercase;

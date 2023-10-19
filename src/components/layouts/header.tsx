@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { TfiMenuAlt } from "react-icons/tfi";
 import classnames from "classnames";
 import logo from "../../img/logbat.png";
+import { IoMdPerson } from "react-icons/io";
 
 function Header({ scroll }: { scroll: number }) {
   const [menuOpen, setMenuOpen] = useState(false);
