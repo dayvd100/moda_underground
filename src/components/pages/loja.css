@@ -5,28 +5,44 @@
     text-align: center;
     margin-top: 140px;
     flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10%;
   }
   
   .description-clothes {
-    background-color: #131212;
+    background-color: #222327;
     justify-content: center;
     align-items: center;
-    width: 22%;
-    margin: 8px;
+    width: 18%;
+    margin: 22px;
     padding-top: 1px;
     color: #3EC20A;
+    border-radius: 10px;
+    box-shadow: 0px -5px 14px rgba(0, 0, 0, 0.2), 0px 5px 14px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    padding: 2px 1px 8px 1px;
   }
 
   .description-clothes p{
     margin-top: 6px;
+    color: #3EC20A;
   }
 
   .img-clothe-container {
-    margin: 0 10px; /* Adicione margem entre as imagens, se necessário */
+    margin: 0 10px;
   }
   
   .img-clothe {
     margin-top:6px;
     width: 70%;
     height: auto;
+    border-radius: 10px;
+    /* box-shadow: 2px 0px 6px #131212; */
+  }
+
+  .line-clothe-description{
+    border: 1px solid #3EC20A;
+    width: 86%;
+    margin: auto;
+    margin-top: 6px;
   }

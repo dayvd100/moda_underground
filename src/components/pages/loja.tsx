@@ -11,9 +11,9 @@ function Loja() {
         <div className='description-clothes'>
         <div className='img-clothe-container' key={index}>
           <img src={img_clothes} alt={`clothes ${index}`} className='img-clothe' />
-          <hr className='line-clothe-description'/>
+          <p>$99.99</p>
           <p>CLOTHE'S NAME</p>
-          <p>PRICE</p>
+          <hr className='line-clothe-description'/>
         </div>
         </div>
       ))}
