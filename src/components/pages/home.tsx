@@ -3,7 +3,7 @@
 //   RiPinterestFill,
 //   RiTwitterXFill,
 // } from "react-icons/ri";
-import "./home.css";
+import "../pages/home.css";
 
 function Home({
   setScroll,
@@ -25,41 +25,41 @@ function Home({
   };
 
   return (
-    <div>
-      <div
+    <main>
+      <section
         className="container"
         onScroll={(e) => {
           scrollF(e);
           endPageF(e);
         }}
       >
-        <section className="normals">
+        <div className="normals">
           <h1 className="texts">$TyL</h1>
-        </section>
-        <section className="parallax">
+        </div>
+        <div className="parallax">
           <div className="background bg-1"></div>
-          <h1>Drip Too Hard</h1>
-        </section>
+          <h2 className="title">Drip Too Hard</h2>
+        </div>
 
-        <section className="normal">
+        <div className="normal">
           <h1>Drip é o estilo que fala sem palavras.</h1>
-        </section>
+        </div>
 
-        <section className="parallax">
+        <div className="parallax">
           <div className="background bg-2"></div>
-          <h1>I feel like I'm Gucci Mane in 2006</h1>
-        </section>
+          <h2 className="title">I feel like I'm Gucci Mane in 2006</h2>
+        </div>
 
-        <section className="normal">
+        <div className="normal">
           <h1>Sua roupa é a tela, seu estilo é a pintura.</h1>
-        </section>
+        </div>
 
-        <section className="parallax">
+        <div className="parallax">
           <div className="background bg-3"></div>
-          <h1>black lives matter</h1>
-        </section>
-      </div>
-    </div>
+          <h2 className="title">black lives matter</h2>
+        </div>
+      </section>
+    </main>
   );
 }
 

@@ -1,9 +1,9 @@
-import "./contato.css";
+import "../../styles/contato.css";
 import { IoIosCall, IoIosMail, IoIosPin } from "react-icons/io";
 
-function Contato() {
+const Contato = () => {
   return (
-    <div>
+    <section>
       <div className="container2">
         <div className="content">
           <div className="left-side">
@@ -55,8 +55,8 @@ function Contato() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
-}
+};
 
 export default Contato;

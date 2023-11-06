@@ -1,0 +1,32 @@
+.store-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 140px;
+    flex-wrap: wrap;
+  }
+  
+  .description-clothes {
+    background-color: #131212;
+    justify-content: center;
+    align-items: center;
+    width: 22%;
+    margin: 8px;
+    padding-top: 1px;
+    color: #3EC20A;
+  }
+
+  .description-clothes p{
+    margin-top: 6px;
+  }
+
+  .img-clothe-container {
+    margin: 0 10px; /* Adicione margem entre as imagens, se necessário */
+  }
+  
+  .img-clothe {
+    margin-top:6px;
+    width: 70%;
+    height: auto;
+  }

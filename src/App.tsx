@@ -9,28 +9,36 @@ import Social from "./components/pages/social";
 import NotFound from "./components/pages/notFound";
 import Footer from "./components/layouts/footer";
 // import Footer from './components/layouts/footer';
-import {useState} from 'react'
+import { useState } from "react";
+import Login from "./components/pages/login";
+import Registro from "./components/pages/registro";
 
 function App() {
-
-  const[scrollHeader, setScrollHeader] = useState(0);
-  const[endPage, setEndPage] = useState(false);
+  const [scrollHeader, setScrollHeader] = useState(0);
+  const [endPage, setEndPage] = useState(false);
 
   return (
     <div className="container">
       <Router>
-        <Header scroll={scrollHeader}/>
+        <Header scroll={scrollHeader} />
         <div className="links-rotas">
           <Routes>
-            <Route path="/" element={<Home setScroll={setScrollHeader} setEndPage={setEndPage}/>} />
+            <Route
+              path="/"
+              element={
+                <Home setScroll={setScrollHeader} setEndPage={setEndPage} />
+              }
+            />
             <Route path="/referencias" element={<Referencia />} />
             <Route path="/social" element={<Social />} />{" "}
             <Route path="/loja" element={<Loja />} />
             <Route path="/contato" element={<Contato />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/registro" element={<Registro />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
-        <Footer endPage={endPage}/>
+        <Footer endPage={endPage} />
       </Router>
     </div>
   );

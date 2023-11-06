@@ -1,9 +1,9 @@
-function Referencia(){
-        return(
-            <div>
-                <h1>Referencia</h1>
-            </div>
-        )
-}
+import "../../styles/referencia.css";
+
+const Referencia = () => {
+  return <main>
+    
+  </main>;
+};
 
 export default Referencia;

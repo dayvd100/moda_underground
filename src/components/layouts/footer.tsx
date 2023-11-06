@@ -3,7 +3,7 @@ import {
   RiPinterestFill,
   RiTwitterXFill,
 } from "react-icons/ri";
-import "./footer.css";
+import "../../styles/footer.css";
 import classnames from "classnames";
 // import { useState } from "react";
 
@@ -11,12 +11,9 @@ interface FooterProps {
   endPage: boolean;
 }
 
-function Footer({endPage}: FooterProps) {
-
+function Footer({ endPage }: FooterProps) {
   return (
-    <footer className={classnames(
-    {"hide" : endPage === false}
-    )}>
+    <footer className={classnames({ hide: endPage === false })}>
       <div>
         <div className="footer">
           <div className="socialicons">
